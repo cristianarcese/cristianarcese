@@ -865,8 +865,55 @@ section {
         width: min(100% - 28px, 1120px);
     }
 
+    .header-wrapper {
+        min-height: 64px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .menu-toggle {
+        width: 42px;
+        height: 42px;
+    }
+
+    .header-index {
+        top: 64px;
+        padding: 8px 14px 16px;
+    }
+
+    .header-index a {
+        border-radius: 6px;
+        font-size: 1rem;
+        padding: 13px 6px;
+    }
+
     .hero {
-        padding-bottom: 56px;
+        padding-top: 96px;
+        padding-bottom: 48px;
+    }
+
+    .hero-layout {
+        gap: 28px;
+    }
+
+    .hero h1 {
+        max-width: 9ch;
+        font-size: clamp(3rem, 16vw, 4.4rem);
+        line-height: 0.92;
+    }
+
+    .hero-subtitle {
+        margin-top: 20px;
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .eyebrow {
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
     }
 
     .hero-actions,
@@ -882,9 +929,72 @@ section {
         width: 52px;
     }
 
+    .mission-panel {
+        width: 100%;
+    }
+
     .mission-panel,
     .contact-layout {
         padding: 22px;
+    }
+
+    .mission-panel h2 {
+        min-height: 70px;
+        margin: 20px 0;
+        font-size: clamp(2.4rem, 13vw, 3.35rem);
+    }
+
+    .mission-panel dl div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .mission-panel dd {
+        text-align: left;
+    }
+
+    .skill-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .skill-card h3 {
+        margin-top: 26px;
+    }
+
+    .learning-strip {
+        gap: 8px;
+        padding: 16px;
+    }
+
+    .project-visual {
+        height: 150px;
+    }
+
+    .project-body {
+        padding: 18px;
+    }
+
+    .contact-layout {
+        gap: 26px;
+    }
+
+    .contact h2 {
+        font-size: clamp(2rem, 12vw, 2.7rem);
+        line-height: 1.04;
+    }
+
+    .contact-actions {
+        display: grid;
+        grid-template-columns: repeat(4, 52px);
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .contact-actions .icon-button {
+        min-width: 52px;
+        height: 52px;
     }
 
     section {
@@ -898,11 +1008,50 @@ section {
     .hud-reticle {
         width: 96px;
         height: 96px;
+        opacity: 0.5;
     }
 
     .hud-corner {
         width: 46px;
         height: 46px;
+    }
+
+    .hud-data {
+        display: none;
+    }
+
+    .footer {
+        padding: 24px 0;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        width: min(100% - 22px, 1120px);
+    }
+
+    .hero h1 {
+        font-size: clamp(2.55rem, 15vw, 3.4rem);
+    }
+
+    .hero-subtitle,
+    .section-copy {
+        font-size: 0.96rem;
+    }
+
+    .mission-panel h2 {
+        font-size: 2.35rem;
+    }
+
+    .contact-actions {
+        grid-template-columns: repeat(4, 48px);
+    }
+
+    .contact-actions .icon-button {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
     }
 }
 
